@@ -1,4 +1,7 @@
 source 'https://rubygems.org'
+if ENV['CLOUD_PLATFORM'] == "heroku"
+  ruby '2.3.0'
+end
 
 gem 'rails', '>= 5.0.0.beta1', '< 5.1'
 
