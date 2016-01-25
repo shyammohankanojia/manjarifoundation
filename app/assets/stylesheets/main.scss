@@ -304,12 +304,18 @@ body > section {
 
 /******************************** Home Page ********************************/
 .business-header {
-    height: 641px;
+    height: 400px;
     background: image-url("IMG_20150227_150619.jpg") center center no-repeat scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+}
+
+.business-header p {
+    margin-top: 34px;
+    margin-left: 750px;
+    color: #fff;
 }
 
 .tagline {
