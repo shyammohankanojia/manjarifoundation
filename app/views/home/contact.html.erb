@@ -1,4 +1,4 @@
-<header class="business-header">
+<div class="contact-header">
   <div class="container">
       <div class="row">
           <div class="col-lg-12">
@@ -7,5 +7,124 @@
           </div>
       </div>
   </div>
-</header>
+</div>
 
+<section>
+	<div class="container">
+		<h2 class="text-center">Taking the model forward</h2>
+		<br>
+		<div class="col-md-6">
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sed orci vel nisl laoreet molestie. Etiam congue efficitur purus, eget pretium ipsum. Nunc tempor congue lorem quis consectetur. Vestibulum vitae convallis ligula. Nam scelerisque ante vitae ultricies aliquam. Vestibulum a finibus velit. Nunc tempor congue lorem quis consectetur. Vestibulum vitae convallis ligula. Nam scelerisque ante vitae ultricies aliquam. Vestibulum a finibus velit. Nunc tempor congue lorem quis consectetur. Vestibulum vitae convallis ligula. Nam scelerisque ante vitae ultricies aliquam. Vestibulum a finibus velit.
+		</div>
+		<div class="col-md-6">
+			Nunc tempor congue lorem quis consectetur. Vestibulum vitae convallis ligula. Nam scelerisque ante vitae ultricies aliquam. Vestibulum a finibus velit.	Nunc tempor congue lorem quis consectetur. Vestibulum vitae convallis ligula. Nam scelerisque ante vitae ultricies aliquam. Vestibulum a finibus velit.Nunc tempor congue lorem quis consectetur. Vestibulum vitae convallis ligula. Nam scelerisque ante vitae ultricies aliquam. Vestibulum a finibus velit.
+		</div>
+	</div>
+</section>
+<hr>
+
+<section>
+	<div class="container">
+		<h2 class="text-center">How you can engage</h2>
+		<div class="col-md-6">
+			<h3 class="sub-title">Visit</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sed orci vel nisl laoreet molestie. Etiam congue efficitur purus, eget pretium ipsum. Nunc tempor congue lorem quis consectetur. Vestibulum vitae convallis ligula. Nam scelerisque ante vitae ultricies aliquam. Vestibulum a finibus velit. Nunc tempor congue lorem quis consectetur. Vestibulum vitae convallis ligula. Nam scelerisque ante vitae ultricies aliquam. Vestibulum a finibus velit.</p>
+		</div>
+		<div class="col-md-6">
+			<h3 class="sub-title">Research</h3>
+			<p>Nunc tempor congue lorem quis consectetur. Vestibulum vitae convallis ligula. Nam scelerisque ante vitae ultricies aliquam. Vestibulum a finibus velit.Nunc tempor congue lorem quis consectetur. Vestibulum vitae convallis ligula. Nam scelerisque ante vitae ultricies aliquam. Vestibulum a finibus velit.<p>	
+		</div>
+		<div class="clearfix"></div>
+		<div class="col-md-6">
+			<h3 class="sub-title">Intern</h3>
+			<p>Nunc tempor congue lorem quis consectetur. Vestibulum vitae convallis ligula. Nam scelerisque ante vitae ultricies aliquam. Vestibulum a finibus velit.Nunc tempor congue lorem quis consectetur. Vestibulum vitae convallis ligula. Nam scelerisque ante vitae ultricies aliquam. Vestibulum a finibus velit.<p>	
+		</div>
+		<div class="col-md-6">
+			<h3 class="sub-title">Donate</h3>
+			<p>Nunc tempor congue lorem quis consectetur. Vestibulum vitae convallis ligula. Nam scelerisque ante vitae ultricies aliquam. Vestibulum a finibus velit.Nunc tempor congue lorem quis consectetur. Vestibulum vitae convallis ligula. Nam scelerisque ante vitae ultricies aliquam. Vestibulum a finibus velit.<p>	
+		</div>
+	</div>
+</section>
+<hr>
+
+<section>
+	<div class="container">
+		<h2 class="text-center">Tell us how you want to support Manjari</h2>
+		<div class="col-md-8">
+			<br>
+			<%= form_for @contact, as: :contact, url: send_mail_path(@contact), method: :post, html: { class: "form-horizontal" } do |f| %>
+			
+				<div class="form-group">
+					<label class="col-md-3">Name</label>
+					<div class="col-md-7">
+						<%= f.text_field :name, placeholder: "Name", class: 'form-control', required: true %>
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label class="col-md-3">Phone Number</label>
+					<div class="col-md-7">
+						<%= f.text_field :phone, placeholder: "Phone Number", class: 'form-control', required: true %>
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label class="col-md-3">Email ID</label>
+					<div class="col-md-7">
+						<%= f.text_field :email, placeholder: "Email", class: 'form-control', required: true %>
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label class="col-md-3">Organization</label>
+					<div class="col-md-7">
+						<%= f.text_field :organization, placeholder: "Organization", class: 'form-control', required: true %>
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label class="col-md-3">What you want to do</label>
+					<div class="col-md-7">
+						<%= f.text_field :charity, placeholder: "What you want to do", class: 'form-control', required: true %>
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label class="col-md-3">Message</label>
+					<div class="col-md-7">
+						<%= f.text_area :message, placeholder: "Message", class: 'form-control', required: true %>
+					</div>
+				</div>
+
+				<div class="form-group">
+					<div class="col-md-offset-3 col-md-7">
+						<%= recaptcha_tags %>
+					</div>
+				</div>
+
+				<div class="form-group">
+					<div class="col-md-offset-3 col-md-7">
+						<%= f.submit 'Send', class: 'btn btn-primary' %>
+					</div>
+				</div>
+			<% end %>
+		</div>
+
+		<div class="col-md-4">
+			<h3 class="sub-title">Our Address</h3>
+			<br>
+			<p>Manjari Foundation</p> 
+			<p>Hyderabad, Gachibowli, 1212,</p> 
+			<p>India.</p>
+			<p class="address-icons"><i class="fa fa-envelope"></i> email@example.com</p>
+			<p class="address-icons"><i class="fa fa-phone"></i> +123 45 67 89</p>
+			<p class="address-icons"><i class="fa fa-globe"></i> http://www.manjarifoundation.net</p>	
+		</div>
+	</div>
+</section>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('.rc-anchor-alert').hide();
+	});
+</script>

@@ -36,6 +36,12 @@ h4 {
   font-size: 16px;
 }
 
+h3.sub-title {
+  color: #1C9E34;
+  font-size: 18px;
+  font-weight: 600;
+}
+
 a {
   color: #1C9E34;
   -webkit-transition: color 300ms, background-color 300ms;
@@ -411,6 +417,7 @@ body > section {
 #bottom {
   background: #f5f5f5;
   font-size: 14px;
+  margin-top: 25px;
 }
 
 #bottom h3 {

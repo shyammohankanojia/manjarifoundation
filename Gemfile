@@ -30,26 +30,16 @@ gem 'autoprefixer-rails'
 
 gem 'font-awesome-sass'
 
-# Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
-
-# Use Capistrano for deployment
-# gem 'capistrano-rails', group: :development
+gem "recaptcha", require: "recaptcha/rails"
 
 group :development, :test do
   gem 'byebug'
 end
 
 group :development do
-  # Access an IRB console on exception pages or by using <%= console %> in views
-  # gem 'web-console', '~> 3.0'
-  # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
 end
 
 group :production do
   gem 'rails_12factor'
 end
-
-# Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-# gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]

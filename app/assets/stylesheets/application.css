@@ -13,6 +13,8 @@
  *= require framework
  *= require home
  *= require main
+ *= require who_we_are
+ *= require contact
  *= require prettyPhoto
  *= require responsive
  *= require animate.min
