@@ -11,9 +11,12 @@
  * file per style scope.
  *
  *= require framework
- *= require home
+ *= require index
  *= require main
  *= require who_we_are
+ *= require what_we_do
+ *= require our_supporters
+ *= require resources
  *= require contact
  *= require prettyPhoto
  *= require responsive

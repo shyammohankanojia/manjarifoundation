@@ -9,31 +9,63 @@
                 <span class="icon-bar"></span>
             </button>
         </div>
+
         <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav navbar-right">
                 
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Who We Are <i class="fa fa-angle-down"></i></a>
                     <ul class="dropdown-menu">
-                        <li><a href="/our_mission">Mission and Vision</a></li>
-                        <li><a href="/how_we_started">How we started</a></li>
-                        <li><a href="/where_we_work">Where we work</a></li>
+                        <li class="<%= 'active' if action_name=='our_mission'%>">
+                            <a href="/our_mission">Mission and Vision</a>
+                        </li>
+                        
+                        <li class="<%= 'active' if action_name=='how_we_started'%>">
+                            <a href="/how_we_started">How we started</a>
+                        </li>
+                        
+                        <li class="<%= 'active' if action_name=='where_we_work'%>">
+                            <a href="/where_we_work">Where we work</a>
+                        </li>
                     </ul>
                 </li>
                 
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">What We Do <i class="fa fa-angle-down"></i></a>
                     <ul class="dropdown-menu">
-                        <li><a href="#">Prepare Not Repair</a></li>
-                        <li><a href="#">Manjari Ganitha</a></li>
+                        <li class="<%= 'active' if action_name=='principals'%>">
+                            <a href="/principals">Core principals</a>
+                        </li>
+                        
+                        <li class="<%= 'active' if action_name=='organization'%>">
+                            <a href="/organization">Women Institutions</a>
+                        </li>
+                        
+                        <li class="<%= 'active' if action_name=='livlihood_programs'%>">
+                            <a href="/livlihood_programs">Livelihood Programs</a>
+                        </li>
+                        
+                        <li class="<%= 'active' if action_name=='education_programs'%>">
+                            <a href="/education_programs">Education Programs</a>
+                        </li>
+
+                        <li class="<%= 'active' if action_name=='youth_development_programs'%>">
+                            <a href="/youth_development_programs">Youth Development Programs</a>
+                        </li>
                     </ul>
                 </li>
 
-                <li><a href="#">Our Expertise</a></li>
+                <li class="<%= 'active' if action_name=='our_supporters'%>">
+                    <a href="/our_supporters">Our Supporters</a>
+                </li>
 
-                <li><a href="#">Resources</a></li>
+                <li class="<%= 'active' if action_name=='resources'%>" >
+                    <a href="/resources">Resources</a>
+                </li>
                 
-                <li class="<%= 'active' if action_name=='contact'%>"><a href="/contact">Engage</a></li>
+                <li class="<%= 'active' if action_name=='contact'%>">
+                    <a href="/contact">Engage</a>
+                </li>
             </ul>
         </div>
     </div>

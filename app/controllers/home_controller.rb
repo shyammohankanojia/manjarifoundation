@@ -11,6 +11,27 @@ class HomeController < ApplicationController
     def where_we_work
     end
 
+    def principals
+    end
+
+    def organization
+    end
+
+    def livlihood_programs
+    end
+
+    def education_programs
+    end
+
+    def youth_development_programs
+    end
+
+    def our_supporters
+    end
+
+    def resources
+    end
+
     def contact
         @contact = Contact.new
     end
