@@ -48,16 +48,34 @@ class HomeController < ApplicationController
                 mail_attributes['charity']=value['charity']
                 mail_attributes['message']=value['message']
             end
-            mail_attributes['g-recaptcha-response']=value if key == 'g-recaptcha-response'
         end
         
-        if mail_attributes['g-recaptcha-response']==""
-            mail_attributes.delete('g-recaptcha-response')
-            @contact = Contact.new(mail_attributes)
-            render 'contact'
-        elsif verify_recaptcha(mail_attributes['g-recaptcha-response'])==true
-            NotificationMailer.contactus_inquiry(mail_attributes).deliver
-            redirect_to contact_path
-        end
+        NotificationMailer.contactus_inquiry(mail_attributes).deliver
+        redirect_to contact_path
     end
+
+    # def send_mail
+    #     mail_attributes = Hash.new
+
+    #     params.each_pair do |key, value|
+    #         if key == 'contact'
+    #             mail_attributes['name']=value['name']
+    #             mail_attributes['phone']=value['phone']
+    #             mail_attributes['organization']=value['organization']
+    #             mail_attributes['email']=value['email']
+    #             mail_attributes['charity']=value['charity']
+    #             mail_attributes['message']=value['message']
+    #         end
+    #         mail_attributes['g-recaptcha-response']=value if key == 'g-recaptcha-response'
+    #     end
+        
+    #     if mail_attributes['g-recaptcha-response']==""
+    #         mail_attributes.delete('g-recaptcha-response')
+    #         @contact = Contact.new(mail_attributes)
+    #         render 'contact'
+    #     elsif verify_recaptcha(mail_attributes['g-recaptcha-response'])==true
+    #         NotificationMailer.contactus_inquiry(mail_attributes).deliver
+    #         redirect_to contact_path
+    #     end
+    # end
 end
