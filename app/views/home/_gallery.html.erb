@@ -1,4 +1,4 @@
-<section id="gallery">
+<!-- <section id="gallery">
 	<div class="container">
 		<h2 class="text-center">Photo Gallery</h2>
 		<div class="row">
@@ -8,16 +8,16 @@
 						<div class="item active">
 	                        <div class="row">
 	                            <div class="col-sm-6 col-md-4 col-lg-3">
-	                            	<a href="#"><%= image_tag("home-gallery-1.jpg", size: "250x261") %></a>
+	                            	<a href="#"><%#= image_tag("home-gallery-1.jpg", size: "250x261") %></a>
 	                            </div>
 	                            <div class="col-sm-6 col-md-4 col-lg-3">
-	                            	<a href="#"><%= image_tag("home-gallery-2.JPG", size: "250x261") %></a>
+	                            	<a href="#"><%#= image_tag("home-gallery-2.JPG", size: "250x261") %></a>
 	                            </div>
 	                            <div class="col-sm-6 col-md-4 col-lg-3">
-	                            	<a href="#"><%= image_tag("home-gallery-3.jpg", size: "250x261") %></a>
+	                            	<a href="#"><%#= image_tag("home-gallery-3.jpg", size: "250x261") %></a>
 	                            </div>
 	                            <div class="col-sm-6 col-md-4 col-lg-3">
-	                            	<a href="#"><%= image_tag("home-gallery-4.jpg", size: "250x261") %></a>
+	                            	<a href="#"><%#= image_tag("home-gallery-4.jpg", size: "250x261") %></a>
 	                            </div>
 	                        </div>
                     	</div>
@@ -25,16 +25,16 @@
                     	<div class="item">
 	                        <div class="row">
 	                            <div class="col-sm-6 col-md-4 col-lg-3">
-	                            	<a href="#"><%= image_tag("home-gallery-5.jpg", size: "250x261") %></a>
+	                            	<a href="#"><%#= image_tag("home-gallery-5.jpg", size: "250x261") %></a>
 	                            </div>
 	                            <div class="col-sm-6 col-md-4 col-lg-3">
-	                            	<a href="#"><%= image_tag("home-gallery-6.JPG", size: "250x261") %></a>
+	                            	<a href="#"><%#= image_tag("home-gallery-6.JPG", size: "250x261") %></a>
 	                            </div>
 	                            <div class="col-sm-6 col-md-4 col-lg-3">
-	                            	<a href="#"><%= image_tag("home-gallery-7.JPG", size: "250x261") %></a>
+	                            	<a href="#"><%#= image_tag("home-gallery-7.JPG", size: "250x261") %></a>
 	                            </div>
 	                            <div class="col-sm-6 col-md-4 col-lg-3">
-	                            	<a href="#"><%= image_tag("home-gallery-8.jpg", size: "250x261") %></a>
+	                            	<a href="#"><%#= image_tag("home-gallery-8.jpg", size: "250x261") %></a>
 	                            </div>
 	                        </div>
                     	</div>
@@ -45,6 +45,36 @@
 			</div>
 		</div>
 	</div>
+</section> -->
+<section>
+	<div class="container">
+		<h2 class="text-center">Photo Gallery</h2>
+		<div class="row">
+			<div class="flexslider">
+			  	<ul class="slides">
+				    <li><%= image_tag "home-gallery-1.jpg" %></li>
+				    <li><%= image_tag "home-gallery-2.JPG" %></li>
+				    <li><%= image_tag "home-gallery-3.jpg" %></li>
+				    <li><%= image_tag "home-gallery-4.jpg" %></li>
+
+				    <li><%= image_tag "home-gallery-5.jpg" %></li>
+				    <li><%= image_tag "home-gallery-6.JPG" %></li>
+				    <li><%= image_tag "home-gallery-7.JPG" %></li>
+				    <li><%= image_tag "home-gallery-8.jpg" %></li>
+
+				    <li><%= image_tag "home-gallery-1.jpg" %></li>
+				    <li><%= image_tag "home-gallery-2.JPG" %></li>
+				    <li><%= image_tag "home-gallery-3.jpg" %></li>
+				    <li><%= image_tag "home-gallery-4.jpg" %></li>
+
+				    <li><%= image_tag "home-gallery-5.jpg" %></li>
+				    <li><%= image_tag "home-gallery-6.JPG" %></li>
+				    <li><%= image_tag "home-gallery-7.JPG" %></li>
+				    <li><%= image_tag "home-gallery-8.jpg" %></li>
+			  	</ul>
+			</div>
+		</div>
+	</div>
 </section>
 
 <script type="text/javascript">
@@ -52,5 +82,12 @@
 		$('#myCarousel').carousel({
 			interval: 3000
 		})
+
+		$('.flexslider').flexslider({
+			animation: "slide",
+			animationLoop: false,
+			itemWidth: 230,
+			itemMargin: 10
+		});
 	});
 </script>
