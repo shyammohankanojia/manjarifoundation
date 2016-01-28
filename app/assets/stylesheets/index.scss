@@ -1,5 +1,5 @@
 /******************************** Banner ********************************/
-.home-banner {
+#home-banner {
     height: 400px;
     background: image-url("home-banner.jpg") center center no-repeat scroll;
     -webkit-background-size: cover;
@@ -8,7 +8,7 @@
     -o-background-size: cover;
 }
 
-.home-banner p {
+#home-banner p {
     margin-top: 34px;
     margin-left: 750px;
     color: #fff;
@@ -23,7 +23,6 @@
 /***************************** what is manjari *********************************/
 #main-page {
   background: #f2f2f2;
-  line-height: 23px;
 }
 
 /***************************** our programs *********************************/ 
@@ -65,11 +64,10 @@
 /***************************** our impact *********************************/
 #our-impact {
   background: #f2f2f2;
-  padding-top: 0px;
 }
 
 .feature-wrap {
-  margin-bottom: 35px;
+  margin-bottom: 22px;
   overflow: hidden;
 }
 

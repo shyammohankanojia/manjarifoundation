@@ -11,6 +11,8 @@
  * file per style scope.
  *
  *= require framework
+ *= require nav
+ *= require footer
  *= require index
  *= require main
  *= require who_we_are
@@ -19,7 +21,7 @@
  *= require resources
  *= require contact
  *= require prettyPhoto
- *= require responsive
  *= require animate.min
+ *= require responsive
  *= require_self
  */
