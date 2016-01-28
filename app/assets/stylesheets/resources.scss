@@ -6,3 +6,22 @@
     background-size: cover;
     -o-background-size: cover;	
 }
+
+.resources-wrap {
+	height: 100%;
+	width: 100%;
+	margin-bottom: 30px;
+}
+
+.resources-box {
+	text-align: center;
+	line-height: 200px;
+	border: 1px solid #e5e5e5;
+	border-radius: 2px;
+	height: 230px;
+	width: 100%;
+}
+
+.resources-box-content {
+	margin-top : 20px;
+}
