@@ -27,6 +27,10 @@
                             <a href="/our-mission">Mission and Vision</a>
                         </li>
 
+                        <li class="<%= 'active' if action_name=='principals'%>">
+                            <a href="/principals">Core principals</a>
+                        </li>
+
                         <li class="<%= 'active' if action_name=='how_we_started'%>">
                             <a href="/how-we-started">How we started</a>
                         </li>
@@ -40,10 +44,6 @@
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">What We Do <i class="fa fa-angle-down"></i></a>
                     <ul class="dropdown-menu">
-                        <li class="<%= 'active' if action_name=='principals'%>">
-                            <a href="/principals">Core principals</a>
-                        </li>
-
                         <li class="<%= 'active' if action_name=='organization'%>">
                             <a href="/organization">Women Institutions</a>
                         </li>
