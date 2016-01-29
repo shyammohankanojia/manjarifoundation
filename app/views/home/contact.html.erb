@@ -84,7 +84,7 @@
 				<div class="form-group">
 					<label class="col-md-3">What you want to do</label>
 					<div class="col-md-7">
-						<%= f.text_field :charity, placeholder: "What you want to do", class: 'form-control', required: true %>
+						<%= f.select :charity, options_for_select(["Intern","Visit","Research","Donate"]), {prompt: 'Please Select'}, {class: 'form-control', required: true} %>
 					</div>
 				</div>
 
