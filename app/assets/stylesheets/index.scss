@@ -68,6 +68,29 @@
   height: 90px;
 }
 
+@media screen and (max-width: 760px) {
+  .program-img {
+    height: 450px;
+    overflow: hidden;
+  }
+
+  .program-content {
+    padding: 20px 24px;
+    height: 90px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .program-img {
+    height: 180px;
+    overflow: hidden;
+  }
+
+  .program-content {
+    padding: 20px 24px;
+    height: 135px;
+  }
+}
 /***************************** our impact *********************************/
 #our-impact {
   background: #f2f2f2;
