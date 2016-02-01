@@ -26,6 +26,18 @@
   margin-left: 0px;
 }
 
+.navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand img{
+  width: 150px;
+  height: 74px;
+}
+
+@media screen and (max-width: 767px) {
+  .navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand img{
+    width: auto;
+    height: 100%;
+  }
+}
+
 .navbar {
   border-radius: 0;
   margin-bottom: 0;
@@ -54,10 +66,6 @@
 .navbar-inverse .navbar-nav > li > a:hover{
 	background-color: #1C9E34;
   color: #fff;
-}
-
-.navbar-inverse {
-  border: none;
 }
 
 .navbar-inverse .navbar-brand {
