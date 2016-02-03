@@ -32,6 +32,9 @@ class HomeController < ApplicationController
     def resources
     end
 
+    def album_one
+    end
+
     def contact
         @contact = Contact.new
     end

@@ -14,6 +14,7 @@ Rails.application.routes.draw do
   	get 'our-supporters', to: 'home#our_supporters'
 
   	get 'resources', to: 'home#resources'
+    get 'album-one', to: 'home#album_one'
 
   	get "contact", to: 'home#contact'
   	post "send_mail", to: 'home#send_mail'
