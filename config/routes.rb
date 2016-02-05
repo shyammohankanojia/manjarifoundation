@@ -18,4 +18,6 @@ Rails.application.routes.draw do
 
   	get "contact", to: 'home#contact'
   	post "send_mail", to: 'home#send_mail'
+
+    get "information-policy", to: 'home#information_policy'
 end

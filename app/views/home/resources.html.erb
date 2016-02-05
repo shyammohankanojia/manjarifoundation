@@ -80,50 +80,119 @@
 </section>
 <hr>
 
-<section id="recent-works">
+<section>
     <div class="container">
-    		<h2 class="text-center">Photo Gallery</h2>
+        <h2 class="text-center">Photo Gallery</h2>
         <div class="row">
+        	
+        	<div class="col-sm-6 col-md-4 col-lg-4">
+        		<a href="#" data-toggle="modal" data-target="#">
+	        		<div class="album-box" id="album-one">
+	        			<div class="overlay">
+							    <span class="album-content">
+							    	<h3>Women's Institution</h3>
+							    	<p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
+							    </span>
+							  </div>
+	        		</div>
+        		</a>
+        	</div>
 
-            <div class="col-xs-12 col-sm-4 col-md-4">
-                <div class="recent-work-wrap">
-                    <%= image_tag 'education-banner.jpg', class: 'img-responsive' %>
-                    <div class="overlay">
-                        <div class="recent-work-inner">
-                            <h3>Women's Institution Album</h3>
-                            <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
-                            <a class="preview" href="/album-one" rel="prettyPhoto"><i class="fa fa-eye"></i> View</a>
-                        </div> 
-                    </div>
-                </div>
-            </div> 
+        	<div class="col-sm-6 col-md-4 col-lg-4">
+        		<a href="#" data-toggle="modal" data-target="#">
+	        		<div class="album-box" id="album-two">
+	        			<div class="overlay">
+							    <span class="album-content">
+							    	<h3>Women's Institution</h3>
+							    	<p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
+							    </span>
+							  </div>
+	        		</div>
+        		</a>
+        	</div>
 
-            <div class="col-xs-12 col-sm-4 col-md-4">
-                <div class="recent-work-wrap">
-                    <%= image_tag 'education-banner.jpg', class: 'img-responsive' %>
-                    <div class="overlay">
-                        <div class="recent-work-inner">
-                            <h3>Women's Institution Album</h3>
-                            <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
-                            <a class="preview" href="/album-one" rel="prettyPhoto"><i class="fa fa-eye"></i> View</a>
-                        </div> 
-                    </div>
-                </div>
-            </div>   
-
-            <div class="col-xs-12 col-sm-4 col-md-4">
-                <div class="recent-work-wrap">
-                    <%= image_tag 'education-banner.jpg', class: 'img-responsive' %>
-                    <div class="overlay">
-                        <div class="recent-work-inner">
-                            <h3>Women's Institution Album</h3>
-                            <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
-                            <a class="preview" href="/album-one" rel="prettyPhoto"><i class="fa fa-eye"></i> View</a>
-                        </div> 
-                    </div>
-                </div>
-            </div>   
-               
-        </div>
+        	<div class="col-sm-6 col-md-4 col-lg-4">
+        		<a href="#" data-toggle="modal" data-target="#">
+	        		<div class="album-box" id="album-three">
+	        			<div class="overlay">
+							    <span class="album-content">
+							    	<h3>Women's Institution</h3>
+							    	<p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
+							    </span>
+							  </div>
+	        		</div>
+        		</a>
+        	</div>
     </div>
+
 </section>
+
+<!-- Album One Modal -->
+<div id="album_one_modal" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-lg">
+
+    <div class="modal-content">
+      <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+      <div class="modal-body">
+
+      	<div id="slider" class="flexslider album-slider">
+				  <ul class="slides album-slider-img">
+				    <li><%= image_tag "home-gallery-1.jpg", class: 'img-thumbnail' %></li>
+				    <li><%= image_tag "home-gallery-2.JPG", class: 'img-thumbnail' %></li>
+				    <li><%= image_tag "home-gallery-3.jpg", class: 'img-thumbnail' %></li>
+				    <li><%= image_tag "home-gallery-4.jpg", class: 'img-thumbnail' %></li>
+				    <li><%= image_tag "home-gallery-5.jpg", class: 'img-thumbnail' %></li>
+				    <li><%= image_tag "home-gallery-6.JPG", class: 'img-thumbnail' %></li>
+				    <li><%= image_tag "home-gallery-7.JPG", class: 'img-thumbnail' %></li>
+				    <li><%= image_tag "home-gallery-8.jpg", class: 'img-thumbnail' %></li>
+				  </ul>
+				</div>
+
+				<div id="carousel" class="flexslider album-carousel">
+				  <ul class="slides album-carousel-img">
+				    <li><%= image_tag "home-gallery-1.jpg", class: 'img-thumbnail' %></li>
+				    <li><%= image_tag "home-gallery-2.JPG", class: 'img-thumbnail' %></li>
+				    <li><%= image_tag "home-gallery-3.jpg", class: 'img-thumbnail' %></li>
+				    <li><%= image_tag "home-gallery-4.jpg", class: 'img-thumbnail' %></li>
+				    <li><%= image_tag "home-gallery-5.jpg", class: 'img-thumbnail' %></li>
+				    <li><%= image_tag "home-gallery-6.JPG", class: 'img-thumbnail' %></li>
+				    <li><%= image_tag "home-gallery-7.JPG", class: 'img-thumbnail' %></li>
+				    <li><%= image_tag "home-gallery-8.jpg", class: 'img-thumbnail' %></li>
+				  </ul>
+				</div>
+
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+
+			function initFlexModal() {
+				$('#carousel').flexslider({
+			    animation: "slide",
+			    controlNav: false,
+			    animationLoop: false,
+			    slideshow: false,
+			    itemWidth: 210,
+			    itemMargin: 5,
+			    asNavFor: '#slider'
+			  });
+			 
+			  $('#slider').flexslider({
+			    animation: "slide",
+			    controlNav: false,
+			    animationLoop: false,
+			    slideshow: false,
+			    sync: "#carousel"
+			  });
+			}
+
+			$('#album_one_modal').on('shown.bs.modal', function () {
+    		initFlexModal();
+			})
+	});
+</script>

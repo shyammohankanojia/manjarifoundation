@@ -35,6 +35,9 @@ class HomeController < ApplicationController
     def album_one
     end
 
+    def information_policy
+    end
+
     def contact
         @contact = Contact.new
     end

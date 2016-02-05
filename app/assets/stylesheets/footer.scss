@@ -91,3 +91,13 @@ ul.social-share li a:hover, ul.social-share li a:focus {
   background: #1C9E34;
   color: #fff !important;
 }
+
+/******************************************Privacy*********************************/ 
+.privacy-banner {
+  height: 400px;
+  background: image-url("information_policy.jpg") center center no-repeat scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
