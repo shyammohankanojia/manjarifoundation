@@ -1,7 +1,7 @@
 /******************************** Banner ********************************/
 #home-banner {
   height: 400px;
-  background: image-url("home_banner.JPG") center center no-repeat scroll;
+  background: image-url("banner/home_banner.JPG") center center no-repeat scroll;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -136,9 +136,58 @@
 // }
 
 /***************************** gallery *********************************/
-.carousel-control {
-  padding-top:10%;
-  width:5%;
-  font-size: 100px;
-  color: #1C9E34;
+// .carousel-control {
+//   padding-top:10%;
+//   width:5%;
+//   font-size: 100px;
+//   color: #1C9E34;
+// }
+
+.main-slider-img > li {
+  height: 150px !important;
+  overflow: hidden;
+}
+
+.main-slider-img > li > img {
+  height: 100% !important;
+}
+
+@font-face {
+  font-family: 'flexslider-icon';
+  src: asset-url('flexslider-icon.eot');
+  src: asset-url('flexslider-icon.eot?#iefix') format('embedded-opentype'), asset-url('flexslider-icon.woff') format('woff'), asset-url('flexslider-icon.ttf') format('truetype'), asset-url('flexslider-icon.svg#flexslider-icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.flex-direction-nav a {
+  text-decoration: none;
+  display: block;
+  width: 40px;
+  height: 40px;
+  font-size: 15px;
+  line-height: 40px;
+  margin: -20px 0 0;
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  overflow: hidden;
+  opacity: 0;
+  cursor: pointer;
+  color: #fff;
+  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.flex-direction-nav .flex-prev {
+  left: 0px;
+}
+
+.flex-direction-nav .flex-next {
+  right: 0px;
+  text-align: right;
 }

@@ -1,6 +1,6 @@
 .resources-banner {
 	height: 400px;
-    background: image-url("resources-banner.jpg") center center no-repeat scroll;
+    background: image-url("banner/resources-banner.jpg") center center no-repeat scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -83,8 +83,13 @@
   margin-bottom: 5px;
 }
 
+.album-slider-img > li {
+  height: 450px;
+  overflow: hidden;
+}
+
 .album-slider-img > li > img {
-  height: 500px !important;
+  height: 100% !important;
 }
 
 .album-carousel {
@@ -97,4 +102,9 @@
 
 .album-carousel-img > li {
   height: 150px !important;
+  overflow: hidden;
+}
+
+.album-carousel-img > li > img {
+  height: 100% !important;
 }
