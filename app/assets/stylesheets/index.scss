@@ -1,7 +1,7 @@
 /******************************** Banner ********************************/
 #home-banner {
   height: 400px;
-  background: image-url("banner/home_banner.JPG") center center no-repeat scroll;
+  background: image-url("banner/home_banner.jpg") center center no-repeat scroll;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -29,7 +29,7 @@
 
 /***************************** our programs *********************************/ 
 #our-programs {
-  background: #000 image-url("home-background.jpg");
+  background: #000 image-url("home_page/background_image.jpg");
   background-size: cover;
 }
 
