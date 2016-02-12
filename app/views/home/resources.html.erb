@@ -86,7 +86,7 @@
         <div class="row">
         	
         	<div class="col-sm-6 col-md-4 col-lg-4">
-        		<a href="#" data-toggle="modal" data-target="#">
+        		<a href="#" data-toggle="modal" data-target="#album_one_modal">
 	        		<div class="album-box" id="album-one">
 	        			<div class="overlay">
 							    <span class="album-content">
@@ -99,7 +99,7 @@
         	</div>
 
         	<div class="col-sm-6 col-md-4 col-lg-4">
-        		<a href="#" data-toggle="modal" data-target="#">
+        		<a href="#" data-toggle="modal" data-target="#album_one_modal">
 	        		<div class="album-box" id="album-two">
 	        			<div class="overlay">
 							    <span class="album-content">
@@ -112,7 +112,7 @@
         	</div>
 
         	<div class="col-sm-6 col-md-4 col-lg-4">
-        		<a href="#" data-toggle="modal" data-target="#">
+        		<a href="#" data-toggle="modal" data-target="#album_one_modal">
 	        		<div class="album-box" id="album-three">
 	        			<div class="overlay">
 							    <span class="album-content">
@@ -132,33 +132,66 @@
   <div class="modal-dialog modal-lg">
 
     <div class="modal-content">
-      <button type="button" class="close" data-dismiss="modal">&times;</button>
+    	<div class="modal-header">
+    		Women's Institution
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
 
       <div class="modal-body">
 
       	<div id="slider" class="flexslider album-slider">
 				  <ul class="slides album-slider-img">
-				    <li><%= image_tag "home-gallery-1.jpg", class: 'img-thumbnail' %></li>
-				    <li><%= image_tag "home-gallery-2.JPG", class: 'img-thumbnail' %></li>
-				    <li><%= image_tag "home-gallery-3.jpg", class: 'img-thumbnail' %></li>
-				    <li><%= image_tag "home-gallery-4.jpg", class: 'img-thumbnail' %></li>
-				    <li><%= image_tag "home-gallery-5.jpg", class: 'img-thumbnail' %></li>
-				    <li><%= image_tag "home-gallery-6.JPG", class: 'img-thumbnail' %></li>
-				    <li><%= image_tag "home-gallery-7.JPG", class: 'img-thumbnail' %></li>
-				    <li><%= image_tag "home-gallery-8.jpg", class: 'img-thumbnail' %></li>
+				    <li><%= image_tag "gallery/womens_institution_1.jpg", class: 'img-thumbnail' %></li>
+				    <li><%= image_tag "gallery/womens_institution_2.jpg", class: 'img-thumbnail' %></li>
+				    <li><%= image_tag "gallery/womens_institution_3.jpg", class: 'img-thumbnail' %></li>
+				    <li><%= image_tag "gallery/womens_institution_4.jpg", class: 'img-thumbnail' %></li>
+				    <li><%= image_tag "gallery/womens_institution_5.jpg", class: 'img-thumbnail' %></li>
+
+				    <li><%= image_tag "gallery/livelihood_1.jpg", class: 'img-thumbnail' %></li>
+				    <li><%= image_tag "gallery/livelihood_2.jpg", class: 'img-thumbnail' %></li>
+				    <li><%= image_tag "gallery/livelihood_3.jpg", class: 'img-thumbnail' %></li>
+				    <li><%= image_tag "gallery/livelihood_4.jpg", class: 'img-thumbnail' %></li>
+				    <li><%= image_tag "gallery/livelihood_5.jpg", class: 'img-thumbnail' %></li>
+				    
+				    <li><%= image_tag "gallery/education_1.jpg", class: 'img-thumbnail' %></li>
+				    <li><%= image_tag "gallery/education_2.jpg", class: 'img-thumbnail' %></li>
+				    <li><%= image_tag "gallery/education_3.jpg", class: 'img-thumbnail' %></li>
+				    <li><%= image_tag "gallery/education_4.jpg", class: 'img-thumbnail' %></li>
+				    <li><%= image_tag "gallery/education_5.jpg", class: 'img-thumbnail' %></li>
+				    
+				    <li><%= image_tag "gallery/youth_development_1.jpg", class: 'img-thumbnail' %></li>
+				    <li><%= image_tag "gallery/youth_development_2.jpg", class: 'img-thumbnail' %></li>
+				    <li><%= image_tag "gallery/youth_development_3.jpg", class: 'img-thumbnail' %></li>
+				    <li><%= image_tag "gallery/youth_development_4.jpg", class: 'img-thumbnail' %></li>
+				    <li><%= image_tag "gallery/youth_development_5.jpg", class: 'img-thumbnail' %></li>
 				  </ul>
 				</div>
 
 				<div id="carousel" class="flexslider album-carousel">
 				  <ul class="slides album-carousel-img">
-				    <li><%= image_tag "home-gallery-1.jpg", class: 'img-thumbnail' %></li>
-				    <li><%= image_tag "home-gallery-2.JPG", class: 'img-thumbnail' %></li>
-				    <li><%= image_tag "home-gallery-3.jpg", class: 'img-thumbnail' %></li>
-				    <li><%= image_tag "home-gallery-4.jpg", class: 'img-thumbnail' %></li>
-				    <li><%= image_tag "home-gallery-5.jpg", class: 'img-thumbnail' %></li>
-				    <li><%= image_tag "home-gallery-6.JPG", class: 'img-thumbnail' %></li>
-				    <li><%= image_tag "home-gallery-7.JPG", class: 'img-thumbnail' %></li>
-				    <li><%= image_tag "home-gallery-8.jpg", class: 'img-thumbnail' %></li>
+				    <li><%= image_tag "gallery/womens_institution_1.jpg", class: 'img-thumbnail' %></li>
+				    <li><%= image_tag "gallery/womens_institution_2.jpg", class: 'img-thumbnail' %></li>
+				    <li><%= image_tag "gallery/womens_institution_3.jpg", class: 'img-thumbnail' %></li>
+				    <li><%= image_tag "gallery/womens_institution_4.jpg", class: 'img-thumbnail' %></li>
+				    <li><%= image_tag "gallery/womens_institution_5.jpg", class: 'img-thumbnail' %></li>
+
+				    <li><%= image_tag "gallery/livelihood_1.jpg", class: 'img-thumbnail' %></li>
+				    <li><%= image_tag "gallery/livelihood_2.jpg", class: 'img-thumbnail' %></li>
+				    <li><%= image_tag "gallery/livelihood_3.jpg", class: 'img-thumbnail' %></li>
+				    <li><%= image_tag "gallery/livelihood_4.jpg", class: 'img-thumbnail' %></li>
+				    <li><%= image_tag "gallery/livelihood_5.jpg", class: 'img-thumbnail' %></li>
+				    
+				    <li><%= image_tag "gallery/education_1.jpg", class: 'img-thumbnail' %></li>
+				    <li><%= image_tag "gallery/education_2.jpg", class: 'img-thumbnail' %></li>
+				    <li><%= image_tag "gallery/education_3.jpg", class: 'img-thumbnail' %></li>
+				    <li><%= image_tag "gallery/education_4.jpg", class: 'img-thumbnail' %></li>
+				    <li><%= image_tag "gallery/education_5.jpg", class: 'img-thumbnail' %></li>
+				    
+				    <li><%= image_tag "gallery/youth_development_1.jpg", class: 'img-thumbnail' %></li>
+				    <li><%= image_tag "gallery/youth_development_2.jpg", class: 'img-thumbnail' %></li>
+				    <li><%= image_tag "gallery/youth_development_3.jpg", class: 'img-thumbnail' %></li>
+				    <li><%= image_tag "gallery/youth_development_4.jpg", class: 'img-thumbnail' %></li>
+				    <li><%= image_tag "gallery/youth_development_5.jpg", class: 'img-thumbnail' %></li>
 				  </ul>
 				</div>
 
