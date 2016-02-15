@@ -3,7 +3,7 @@
       <div class="row">
           <div class="col-md-offset-6 col-md-6">
             <div class="banner-title">
-              <h1>Manjari Foundation</h1> 
+              <h1>Manjari Foundation</h1>
             </div>
           </div>
       </div>
@@ -32,17 +32,17 @@
 
 		<div class="col-md-12">
 			<h3 class="sub-title">Intern</h3>
-			<p>We need young minds like you as you have the energy to make innovations and patience to learn from mistakes. Your intelligence and enthusiasm are your greatest assets and we need only that. As an intern your valuable contribution is most welcome. Surely the association will be a fruitful one as we would learn from each other’s experience and knowledge. For further details, do fill up the form below.<p>	
+			<p>We need young minds like you as you have the energy to make innovations and patience to learn from mistakes. Your intelligence and enthusiasm are your greatest assets and we need only that. As an intern your valuable contribution is most welcome. Surely the association will be a fruitful one as we would learn from each other’s experience and knowledge. For further details, do fill up the form below.<p>
 		</div>
 
 		<div class="col-md-12">
 			<h3 class="sub-title">Research</h3>
-			<p>If you are an academician, researcher or research institution then we would like to associate with you. We understand and appreciate the value of good research as we ourselves utilize research results for campaigning and other practical purposes. We are therefore eager to cooperate with academic researchers, both formal and informal. Complete the form below to be a part of our program.<p>	
+			<p>If you are an academician, researcher or research institution then we would like to associate with you. We understand and appreciate the value of good research as we ourselves utilize research results for campaigning and other practical purposes. We are therefore eager to cooperate with academic researchers, both formal and informal. Complete the form below to be a part of our program.<p>
 		</div>
 
 		<div class="col-md-6">
 			<h3 class="sub-title">Donate</h3>
-			<p>Your donation of any amount can make a big difference in the lives of underprivileged women from rural families. Take the first step towards ending poverty and social injustice. Donate now and get involved. Manjari is a registered non-profit organization, so your donation will be exempted from tax. You can send your cheque/draft in favour of</p>	
+			<p>Your donation of any amount can make a big difference in the lives of underprivileged women from rural families. Take the first step towards ending poverty and social injustice. Donate now and get involved. Manjari is a registered non-profit organization, so your donation will be exempted from tax. You can send your cheque/draft in favour of</p>
 		</div>
 
 		<div class="col-md-6">
@@ -67,7 +67,7 @@
 		<h2 class="text-center">Tell us how you want to support Manjari</h2>
 		<div class="col-md-8">
 			<%= form_for @contact, as: :contact, url: send_mail_path(@contact), method: :post, html: { class: "form-horizontal" } do |f| %>
-			
+
 				<div class="form-group">
 					<label class="col-md-3">Name</label>
 					<div class="col-md-7">
@@ -85,7 +85,7 @@
 				<div class="form-group">
 					<label class="col-md-3">Email ID</label>
 					<div class="col-md-7">
-						<%= f.text_field :email, placeholder: "Email", class: 'form-control', required: true %>
+						<%= f.email_field :email, placeholder: "Email", class: 'form-control', required: true %>
 					</div>
 				</div>
 
@@ -106,7 +106,7 @@
 				<div class="form-group">
 					<label class="col-md-3">Message</label>
 					<div class="col-md-7">
-						<%= f.text_area :message, placeholder: "Message", class: 'form-control', required: true %>
+						<%= f.text_area :message, placeholder: "Message", class: 'form-control', required: true, maxlength: '250' %>
 					</div>
 				</div>
 
@@ -127,7 +127,7 @@
 		<div class="col-md-4">
 			<h3 class="sub-title">Our Address</h3>
 			<br>
-			<p> Manjari Foundation</p> 
+			<p> Manjari Foundation</p>
 			<p> 1/363, Anand Nagar, Saipau Road</p>
 			<p> Dholpur, Rajasthan, India.</p>
 			<p class="address-icons"><i class="fa fa-envelope"></i> <a href="mailto:info@manjarifoundation.in">info@manjarifoundation.in</a></p>
