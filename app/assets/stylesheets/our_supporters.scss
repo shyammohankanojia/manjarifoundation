@@ -1,11 +1,11 @@
 .supporters-banner {
 	height: 400px;
-    background: image-url("banner/our_supporters_banner.jpg") center center no-repeat scroll;
+    background: image-url("banner/our-supporters-banner.jpg") center center no-repeat scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
-    position: relative;	
+    position: relative;
 }
 
 .supporters-banner::before {

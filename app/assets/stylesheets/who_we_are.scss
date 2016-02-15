@@ -1,6 +1,6 @@
 .our-mission-banner {
     height: 400px;
-    background: image-url("banner/our_mission.jpg") center center no-repeat scroll;
+    background: image-url("banner/our-mission.jpg") center center no-repeat scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -9,7 +9,7 @@
 
 #principals-banner {
     height: 400px;
-    background: image-url("banner/core_principles_banner.jpg") center center no-repeat scroll;
+    background: image-url("banner/core-principles-banner.jpg") center center no-repeat scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -30,21 +30,21 @@
 
 .how-we-started-banner {
 	height: 400px;
-    background: image-url("banner/how_we_started.jpg") center center no-repeat scroll;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;	
-}
-
-.where-we-wrok-banner {
-	height: 400px;
-    background: image-url("banner/where_we_work_banner.jpg") center center no-repeat scroll;
+    background: image-url("banner/how-we-started.jpg") center center no-repeat scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
-    position: relative;	
+}
+
+.where-we-wrok-banner {
+	height: 400px;
+    background: image-url("banner/where-we-work-banner.jpg") center center no-repeat scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    position: relative;
 }
 
 .where-we-wrok-banner::before {
