@@ -54,7 +54,7 @@
 						<p>Kachari Road, Dholpur, Rajasthan, India.</p>
 						<p>A/c Number&nbsp;:&nbsp;111500010420,</p>
 						<p>IFSC code&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;BMBL0000036,</p>
-						<p>MICR code&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;328733002</p>
+						<p>MICR code&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;328733002</p>
 						</b>
 					</div>
 		</div>
@@ -69,21 +69,21 @@
 			<%= form_for @contact, as: :contact, url: send_mail_path(@contact), method: :post, html: { class: "form-horizontal" } do |f| %>
 
 				<div class="form-group">
-					<label class="col-md-3">Name</label>
+					<label class="col-md-3">Name <span>*</span></label>
 					<div class="col-md-7">
 						<%= f.text_field :name, placeholder: "Name", class: 'form-control', required: true %>
 					</div>
 				</div>
 
 				<div class="form-group">
-					<label class="col-md-3">Phone Number</label>
+					<label class="col-md-3">Phone Number <span>*</span></label>
 					<div class="col-md-7">
 						<%= f.text_field :phone, placeholder: "Phone Number", class: 'form-control', required: true %>
 					</div>
 				</div>
 
 				<div class="form-group">
-					<label class="col-md-3">Email ID</label>
+					<label class="col-md-3">Email ID <span>*</span></label>
 					<div class="col-md-7">
 						<%= f.email_field :email, placeholder: "Email", class: 'form-control', required: true %>
 					</div>
@@ -92,21 +92,21 @@
 				<div class="form-group">
 					<label class="col-md-3">Organization</label>
 					<div class="col-md-7">
-						<%= f.text_field :organization, placeholder: "Organization", class: 'form-control', required: true %>
+						<%= f.text_field :organization, placeholder: "Organization", class: 'form-control' %>
 					</div>
 				</div>
 
 				<div class="form-group">
 					<label class="col-md-3">What you want to do</label>
 					<div class="col-md-7">
-						<%= f.select :charity, options_for_select(["Intern","Visit","Research","Donate"]), {prompt: 'Please Select'}, {class: 'form-control', required: true} %>
+						<%= f.select :charity, options_for_select(["Intern","Visit","Research","Donate","Other"]), {prompt: 'Please Select'}, {class: 'form-control'} %>
 					</div>
 				</div>
 
 				<div class="form-group">
 					<label class="col-md-3">Message</label>
 					<div class="col-md-7">
-						<%= f.text_area :message, placeholder: "Message", class: 'form-control', required: true, maxlength: '250' %>
+						<%= f.text_area :message, placeholder: "Message", class: 'form-control', maxlength: '250' %>
 					</div>
 				</div>
 
