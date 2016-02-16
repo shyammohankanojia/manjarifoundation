@@ -17,14 +17,13 @@
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sed orci vel nisl laoreet molestie. Etiam congue efficitur purus, eget pretium ipsum. Nunc tempor congue lorem quis consectetur. Vestibulum vitae convallis ligula. Nam scelerisque ante vitae ultricies aliquam. Vestibulum a finibus velit. Nunc tempor congue lorem quis consectetur. Vestibulum vitae convallis ligula. Nam scelerisque ante vitae ultricies aliquam. Vestibulum a finibus velit.</p>
 		</div>
 		<div class="col-md-6">
-			<p>Nunc tempor congue lorem quis consectetur. Vestibulum vitae convallis ligula. Nam scelerisque ante vitae ultricies aliquam. Vestibulum a finibus velit.Nunc tempor congue lorem quis consectetur. Vestibulum vitae convallis ligula. Nam scelerisque ante vitae ultricies aliquam. Vestibulum a finibus velit.<p>
-			<a href="#" class="btn btn-primary">Download</a>	
+			<p>Nunc tempor congue lorem quis consectetur. Vestibulum vitae convallis ligula. Nam scelerisque ante vitae ultricies aliquam. Vestibulum a finibus velit.Nunc tempor congue lorem quis consectetur. Vestibulum vitae convallis ligula. Nam scelerisque ante vitae ultricies aliquam. Vestibulum a finibus velit.<p>	
 		</div>
 	</div>
 </section>
 <hr>
 
-<section>
+<!-- <section>
 	<div class="container">
 		<h2 class="text-center">Other Resources</h2>
 		<div class="row">
@@ -78,9 +77,9 @@
 		</div>
 	</div>
 </section>
-<hr>
+<hr> -->
 
-<section>
+<section id="photo-gallery">
     <div class="container">
         <h2 class="text-center">Photo Gallery</h2>
         <div class="row">
@@ -99,11 +98,11 @@
         	</div>
 
         	<div class="col-sm-6 col-md-4 col-lg-4">
-        		<a href="#" data-toggle="modal" data-target="#album_one_modal">
+        		<a href="#" data-toggle="modal" data-target="#album_two_modal">
 	        		<div class="album-box" id="album-two">
 	        			<div class="overlay">
 							    <span class="album-content">
-							    	<h3>Women's Institution</h3>
+							    	<h3>Where We Work</h3>
 							    	<p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
 							    </span>
 							  </div>
@@ -112,11 +111,11 @@
         	</div>
 
         	<div class="col-sm-6 col-md-4 col-lg-4">
-        		<a href="#" data-toggle="modal" data-target="#album_one_modal">
+        		<a href="#" data-toggle="modal" data-target="#album_three_modal">
 	        		<div class="album-box" id="album-three">
 	        			<div class="overlay">
 							    <span class="album-content">
-							    	<h3>Women's Institution</h3>
+							    	<h3>Educational Programs</h3>
 							    	<p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
 							    </span>
 							  </div>
@@ -127,105 +126,6 @@
 
 </section>
 
-<!-- Album One Modal -->
-<div id="album_one_modal" class="modal fade" role="dialog">
-  <div class="modal-dialog modal-lg">
-
-    <div class="modal-content">
-    	<div class="modal-header">
-    		Women's Institution
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-      </div>
-
-      <div class="modal-body">
-
-      	<div id="slider" class="flexslider album-slider">
-				  <ul class="slides album-slider-img">
-				    <li><%= image_tag "gallery/womens_institution_1.jpg", class: 'img-thumbnail' %></li>
-				    <li><%= image_tag "gallery/womens_institution_2.jpg", class: 'img-thumbnail' %></li>
-				    <li><%= image_tag "gallery/womens_institution_3.jpg", class: 'img-thumbnail' %></li>
-				    <li><%= image_tag "gallery/womens_institution_4.jpg", class: 'img-thumbnail' %></li>
-				    <li><%= image_tag "gallery/womens_institution_5.jpg", class: 'img-thumbnail' %></li>
-
-				    <li><%= image_tag "gallery/livelihood_1.jpg", class: 'img-thumbnail' %></li>
-				    <li><%= image_tag "gallery/livelihood_2.jpg", class: 'img-thumbnail' %></li>
-				    <li><%= image_tag "gallery/livelihood_3.jpg", class: 'img-thumbnail' %></li>
-				    <li><%= image_tag "gallery/livelihood_4.jpg", class: 'img-thumbnail' %></li>
-				    <li><%= image_tag "gallery/livelihood_5.jpg", class: 'img-thumbnail' %></li>
-				    
-				    <li><%= image_tag "gallery/education_1.jpg", class: 'img-thumbnail' %></li>
-				    <li><%= image_tag "gallery/education_2.jpg", class: 'img-thumbnail' %></li>
-				    <li><%= image_tag "gallery/education_3.jpg", class: 'img-thumbnail' %></li>
-				    <li><%= image_tag "gallery/education_4.jpg", class: 'img-thumbnail' %></li>
-				    <li><%= image_tag "gallery/education_5.jpg", class: 'img-thumbnail' %></li>
-				    
-				    <li><%= image_tag "gallery/youth_development_1.jpg", class: 'img-thumbnail' %></li>
-				    <li><%= image_tag "gallery/youth_development_2.jpg", class: 'img-thumbnail' %></li>
-				    <li><%= image_tag "gallery/youth_development_3.jpg", class: 'img-thumbnail' %></li>
-				    <li><%= image_tag "gallery/youth_development_4.jpg", class: 'img-thumbnail' %></li>
-				    <li><%= image_tag "gallery/youth_development_5.jpg", class: 'img-thumbnail' %></li>
-				  </ul>
-				</div>
-
-				<div id="carousel" class="flexslider album-carousel">
-				  <ul class="slides album-carousel-img">
-				    <li><%= image_tag "gallery/womens_institution_1.jpg", class: 'img-thumbnail' %></li>
-				    <li><%= image_tag "gallery/womens_institution_2.jpg", class: 'img-thumbnail' %></li>
-				    <li><%= image_tag "gallery/womens_institution_3.jpg", class: 'img-thumbnail' %></li>
-				    <li><%= image_tag "gallery/womens_institution_4.jpg", class: 'img-thumbnail' %></li>
-				    <li><%= image_tag "gallery/womens_institution_5.jpg", class: 'img-thumbnail' %></li>
-
-				    <li><%= image_tag "gallery/livelihood_1.jpg", class: 'img-thumbnail' %></li>
-				    <li><%= image_tag "gallery/livelihood_2.jpg", class: 'img-thumbnail' %></li>
-				    <li><%= image_tag "gallery/livelihood_3.jpg", class: 'img-thumbnail' %></li>
-				    <li><%= image_tag "gallery/livelihood_4.jpg", class: 'img-thumbnail' %></li>
-				    <li><%= image_tag "gallery/livelihood_5.jpg", class: 'img-thumbnail' %></li>
-				    
-				    <li><%= image_tag "gallery/education_1.jpg", class: 'img-thumbnail' %></li>
-				    <li><%= image_tag "gallery/education_2.jpg", class: 'img-thumbnail' %></li>
-				    <li><%= image_tag "gallery/education_3.jpg", class: 'img-thumbnail' %></li>
-				    <li><%= image_tag "gallery/education_4.jpg", class: 'img-thumbnail' %></li>
-				    <li><%= image_tag "gallery/education_5.jpg", class: 'img-thumbnail' %></li>
-				    
-				    <li><%= image_tag "gallery/youth_development_1.jpg", class: 'img-thumbnail' %></li>
-				    <li><%= image_tag "gallery/youth_development_2.jpg", class: 'img-thumbnail' %></li>
-				    <li><%= image_tag "gallery/youth_development_3.jpg", class: 'img-thumbnail' %></li>
-				    <li><%= image_tag "gallery/youth_development_4.jpg", class: 'img-thumbnail' %></li>
-				    <li><%= image_tag "gallery/youth_development_5.jpg", class: 'img-thumbnail' %></li>
-				  </ul>
-				</div>
-
-      </div>
-    </div>
-
-  </div>
-</div>
-
-<script type="text/javascript">
-	$(document).ready(function() {
-
-			function initFlexModal() {
-				$('#carousel').flexslider({
-			    animation: "slide",
-			    controlNav: false,
-			    animationLoop: false,
-			    slideshow: false,
-			    itemWidth: 210,
-			    itemMargin: 5,
-			    asNavFor: '#slider'
-			  });
-			 
-			  $('#slider').flexslider({
-			    animation: "slide",
-			    controlNav: false,
-			    animationLoop: false,
-			    slideshow: false,
-			    sync: "#carousel"
-			  });
-			}
-
-			$('#album_one_modal').on('shown.bs.modal', function () {
-    		initFlexModal();
-			})
-	});
-</script>
+<%= render 'womens_organization' %>
+<%= render 'where_we_work' %>
+<%= render 'education' %>

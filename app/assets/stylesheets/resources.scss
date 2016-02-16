@@ -4,7 +4,19 @@
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
-    -o-background-size: cover;	
+    -o-background-size: cover;
+    position: relative;	
+}
+
+.resources-banner::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 400px;
+  background: rgba(0,0,0,0.3);
+  z-index: 0;
 }
 
 .resources-wrap {
@@ -35,7 +47,7 @@
 }
 
 #album-one {
-  background: image-url("gallery/album_cover_1.jpg") center center no-repeat scroll;
+  background: image-url("albums/womens_organization_cover.jpg") center center no-repeat scroll;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -43,7 +55,7 @@
 }
 
 #album-two {
-  background: image-url("gallery/album_cover_2.jpg") center center no-repeat scroll;
+  background: image-url("albums/where_we_work_cover.jpg") center center no-repeat scroll;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -51,7 +63,7 @@
 }
 
 #album-three {
-  background: image-url("gallery/album_cover_3.jpg") center center no-repeat scroll;
+  background: image-url("albums/education_cover.jpg") center center no-repeat scroll;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
