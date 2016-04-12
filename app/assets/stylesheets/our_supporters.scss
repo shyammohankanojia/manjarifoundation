@@ -18,3 +18,15 @@
   background: rgba(0,0,0,0.3);
   z-index: 0;
 }
+
+.supporters-list {
+  border: 2px solid #eee;
+}
+
+.supporters-list > div:last-child {
+  border-left: 2px solid #eee;
+}
+
+.mentors-table {
+  background: #f1f1f1;
+}
