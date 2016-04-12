@@ -92,6 +92,22 @@ ul.social-share li a:hover, ul.social-share li a:focus {
   color: #fff !important;
 }
 
+li.social-icons > a {
+  display: inline-block;
+  color: #fff !important;
+  background: #404040;
+  width: 25px !important;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+  border-radius: 50%; 
+}
+
+li.social-icons a:hover, 
+li.social-icons a:focus {
+  background: #1C9E34;
+  color: #fff !important;
+}
 /******************************************Privacy*********************************/ 
 .privacy-banner {
   height: 400px;
