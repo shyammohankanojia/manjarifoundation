@@ -71,7 +71,7 @@
                 </li>
 
                 <li class="<%= 'active' if action_name=='resources'%>" >
-                    <a href="/resources">Resources</a>
+                    <%= link_to "Resources", resources_path(), 'data-no-turbolink' => false %>
                 </li>
 
                 <li class="<%= 'active' if action_name=='contact'%>">
