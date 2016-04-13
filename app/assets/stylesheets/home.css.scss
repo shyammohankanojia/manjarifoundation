@@ -1,3 +1,7 @@
+/******************************** Common CSS ****************************/
+.text-justify {
+  text-align: justify;
+} 
 /******************************** Banner ********************************/
 #home-slider-one {
   height: 400px;
@@ -60,6 +64,10 @@
   text-align: center;
 }
 
+.carousel-inner a {
+  background-image: none !important;
+}
+
 @media screen and (max-width: 860px) {
   .banner-title {
     color: #fff;
@@ -101,7 +109,7 @@
 
 .program-content {
   padding: 20px 24px;
-  height: 152px;
+  height: 115px;
 }
 
 .program-content h4 {
