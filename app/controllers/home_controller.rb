@@ -26,6 +26,9 @@ class HomeController < ApplicationController
     def youth_development_programs
     end
 
+    def rural_healthcare_program
+    end
+
     def our_supporters
     end
 

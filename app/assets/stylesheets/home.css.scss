@@ -1,7 +1,7 @@
 /******************************** Banner ********************************/
-#home-banner {
+#home-slider-one {
   height: 400px;
-  background: image-url("banner/home-banner.jpg") center center no-repeat scroll;
+  background: image-url("home_page/home-slider-one.jpg") center center no-repeat scroll;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -9,7 +9,40 @@
   position: relative;
 }
 
-#home-banner::before {
+#home-slider-two {
+  height: 400px;
+  background: image-url("home_page/home-slider-two.jpg") center center no-repeat scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  position: relative;
+}
+
+#home-slider-three {
+  height: 400px;
+  background: image-url("home_page/home-slider-three.jpg") center center no-repeat scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  position: relative;
+}
+
+#home-slider-four {
+  height: 400px;
+  background: image-url("home_page/home-slider-four.jpg") center center no-repeat scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  position: relative;
+}
+
+#home-slider-four::before,
+#home-slider-three::before,
+#home-slider-two::before, 
+#home-slider-one::before {
   content: '';
   position: absolute;
   left: 0;
@@ -154,6 +187,10 @@
 //   font-size: 100px;
 //   color: #1C9E34;
 // }
+
+.flexslider {
+  margin-bottom: 35px;
+}
 
 .main-slider-img > li {
   height: 150px !important;

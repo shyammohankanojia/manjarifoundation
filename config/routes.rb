@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   	get 'livlihood-programs', to: 'home#livlihood_programs'
   	get 'education-programs', to: 'home#education_programs'
   	get 'youth-development-programs', to: 'home#youth_development_programs'
+    get 'rural-healthcare-program', to: 'home#rural_healthcare_program'
 
   	get 'our-supporters', to: 'home#our_supporters'
 
