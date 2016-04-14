@@ -78,19 +78,7 @@
                     <a href="/contact">Engage with us</a>
                 </li>
                 <li>
-                  <script>
-                    (function() {
-                      var cx = '013156886441879886399:vr87g9xgzxi';
-                      var gcse = document.createElement('script');
-                      gcse.type = 'text/javascript';
-                      gcse.async = true;
-                      gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
-                          '//cse.google.com/cse.js?cx=' + cx;
-                      var s = document.getElementsByTagName('script')[0];
-                      s.parentNode.insertBefore(gcse, s);
-                    })();
-                  </script>
-                <gcse:searchresults-only></gcse:searchresults-only>
+                  <%= render "layouts/search"%>
                 </li>
             </ul>
         </div>
