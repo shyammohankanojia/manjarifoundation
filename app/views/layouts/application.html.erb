@@ -25,6 +25,16 @@
   <body>
     <%= render "layouts/nav"%>
 
+    <div id="sidemenu-container">
+      <div id="side-backdrop">
+        <div id="side-nav-menu">
+          <div id='seacrh-wraper'>
+            <%= render "layouts/search"%>
+          </div>
+        </div>
+      </div>  
+    </div>
+
     <%= yield %>
 
     <%= render "layouts/footer"%>

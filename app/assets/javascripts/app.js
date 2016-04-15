@@ -72,4 +72,17 @@ $(document).ready(function() {
 		initFlexModal_three();
 	})
 
+	$('#seacrh-wraper').hide();
+  var search_toggle_status = 1
+
+  $('#search-toggle').click(function(){
+    if (search_toggle_status == 1) {
+      $('#seacrh-wraper').show();
+      search_toggle_status = 2;
+    } else {
+      $('#seacrh-wraper').hide();
+      search_toggle_status = 1;
+    }
+  });
+
 });

@@ -5,6 +5,41 @@
 .list {
   list-style: none;
 } 
+/******************************** Search ****************************/
+.cse .gsc-search-button input.gsc-search-button-v2, input.gsc-search-button-v2 {
+  height: 25px !important;
+  width: 66px !important;
+  margin-top: 5px !important; 
+}
+
+.gscb_a {
+  font: 20px/13px arial,sans-serif !important;
+}
+
+.gsc-orderby-container {
+  text-align: left !important;
+}
+
+.cse .gsc-control-cse, 
+.gsc-control-cse {
+  background-color: #eee !important;
+  border: 2px solid #fff !important;
+}
+
+#sidemenu-container {
+  position: relative;
+  z-index: 1;
+}
+#side-backdrop {
+  display: block;
+  top: 0;
+  left: 50%;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  background: rgba(0,0,0,.6);
+}
+
 /******************************** Banner ********************************/
 #home-slider-one {
   height: 400px;
