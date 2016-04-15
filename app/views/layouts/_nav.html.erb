@@ -8,7 +8,7 @@
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="/"><%= image_tag 'Manjarilogopng.png' %></a>
+      <%= link_to image_tag('Manjarilogopng.png'), root_path, class: 'navbar-brand', 'data-no-turbolink' => false %>
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
           <span class="sr-only">Toggle navigation</span>
           <span class="icon-bar"></span>
@@ -24,15 +24,15 @@
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Who We Are <i class="fa fa-angle-down"></i></a>
             <ul class="dropdown-menu">
                 <li class="<%= 'active' if action_name=='our_mission'%>">
-                    <a href="/our-mission">Mission and Vision</a>
+                  <%= link_to "Mission and Vision", our_mission_path(), 'data-no-turbolink' => false %>
                 </li>
 
                 <li class="<%= 'active' if action_name=='principals'%>">
-                    <a href="/principals">Core principals</a>
+                  <%= link_to "Core principals", principals_path(), 'data-no-turbolink' => false %>
                 </li>
 
                 <li class="<%= 'active' if action_name=='where_we_work'%>">
-                    <a href="/where-we-work">Where we work</a>
+                  <%= link_to "Where we work", where_we_work_path(), 'data-no-turbolink' => false %>
                 </li>
             </ul>
         </li>
@@ -41,38 +41,39 @@
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">What We Do <i class="fa fa-angle-down"></i></a>
           <ul class="dropdown-menu">
             <li class="<%= 'active' if action_name=='education_programs'%>">
-              <a href="/education-programs">Education Programs</a>
+              <%= link_to "Education Programs", education_programs_path(), 'data-no-turbolink' => false %>
             </li>
 
             <li class="<%= 'active' if action_name=='livlihood_programs'%>">
-              <a href="/livlihood-programs">Livelihood Programs</a>
+              <%= link_to "Livelihood Programs", livlihood_programs_path(), 'data-no-turbolink' => false %>
             </li>
 
             <li class="<%= 'active' if action_name=='rural_healthcare_program'%>">
-              <a href="/rural-healthcare-program">Rural Healthcare Program</a>
+              <%= link_to "Rural Healthcare Program", rural_healthcare_program_path(), 'data-no-turbolink' => false %>
             </li>
 
             <li class="<%= 'active' if action_name=='organization'%>">
-              <a href="/organization">Women Institutions</a>
+              <%= link_to "Women Institutions", organization_path(), 'data-no-turbolink' => false %>
             </li>
 
             <li class="<%= 'active' if action_name=='youth_development_programs'%>">
-              <a href="/youth-development-programs">Youth Development Programs</a>
+              <%= link_to "Youth Development Programs", youth_development_programs_path(), 'data-no-turbolink' => false %>
             </li>
           </ul>
         </li>
 
         <li class="<%= 'active' if action_name=='our_supporters'%>">
-            <a href="/our-supporters">Our Supporters</a>
+          <%= link_to "Our Supporters", our_supporters_path(), 'data-no-turbolink' => false %>
         </li>
 
         <li class="<%= 'active' if action_name=='resources'%>" >
-            <%= link_to "Resources", resources_path(), 'data-no-turbolink' => false %>
+          <%= link_to "Resources", resources_path(), 'data-no-turbolink' => false %>
         </li>
 
         <li class="<%= 'active' if action_name=='contact'%>">
-            <a href="/contact">Engage with us</a>
+          <%= link_to "Engage with us", contact_path(), 'data-no-turbolink' => false %>
         </li>
+
         <li>
           <a href="#" id="search-toggle"><i class="fa fa-search" aria-hidden="true"></i> Search</a>
         </li>

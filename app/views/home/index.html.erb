@@ -82,7 +82,7 @@
 		<div class="col-md-6">
 			<p class="text-justify">Manjari’s open platform is a result of tireless contribution from professional development workers and capable support from PRADAN, a pioneer in promoting Self-Help Groups (SHGs) in India. We have been able to bring hope and joy in the lives of over 30,000 rural families. We target new milestones with the belief that someone, somewhere would make a choice to support our mission and vision and come forward to be a part of the project.</p>
 			<p>Thank you for visiting us. Do stay a little longer to know what we do and how you can engage with us.</p>
-			<a href="/our-mission" class="btn btn-primary">Read More</a>
+			<%= link_to "Read More", our_mission_path(), 'data-no-turbolink' => false, class: 'btn btn-primary' %>
 		</div>
 	</div>
 </section>
@@ -99,7 +99,7 @@
 						<p>Manjari Foundation works towards educating underprivileged women about the significance of livelihood education and equal opportunities.</p>
 					</div>
 					<div class="program-link">
-						<a href="/education-programs" class="btn btn-primary">Read More</a>
+						<%= link_to "Read More", education_programs_path(), 'data-no-turbolink' => false, class: 'btn btn-primary' %>
 					</div>
 				</div>
 			</div>
@@ -112,7 +112,7 @@
 						<p>We aim at making a difference in the lives of socially-excluded women by guiding them towards sustainable livelihood programs.</p>
 					</div>
 					<div class="program-link">
-						<a href="/livlihood-programs" class="btn btn-primary">Read More</a>
+						<%= link_to "Read More", livlihood_programs_path(), 'data-no-turbolink' => false, class: 'btn btn-primary' %>
 					</div>
 				</div>
 			</div>
@@ -125,7 +125,7 @@
 						<p>Manjari’s Rural Healthcare program, which is supported by the TATA Trusts, is an attempt to make affordable healthcare accessible to remote rural areas.</p>
 					</div>
 					<div class="program-link">
-						<a href="/rural-healthcare-program" class="btn btn-primary">Read More</a>
+						<%= link_to "Read More", rural_healthcare_program_path(), 'data-no-turbolink' => false, class: 'btn btn-primary' %>
 					</div>
 				</div>
 			</div>
@@ -138,7 +138,7 @@
 						<p>Manjari Foundation helps realize the power of institution building by engaging rural women at grassroots level.</p>
 					</div>
 					<div class="program-link">
-						<a href="/organization" class="btn btn-primary">Read More</a>
+						<%= link_to "Read More", organization_path(), 'data-no-turbolink' => false, class: 'btn btn-primary' %>
 					</div>
 				</div>
 			</div>
@@ -147,11 +147,11 @@
 				<div class="programs-wrap">
 					<div class="program-img"><%= image_tag "home_page/youth_development.jpg" %></div>
 					<div class="program-content">
-						<h4>Youth Program</h4>
+						<h4>Youth Development Program</h4>
 						<p>We provide the platform to youths from marginalized communities and help them explore their innate potential.</p>
 					</div>
 					<div class="program-link">
-						<a href="/youth-development-programs" class="btn btn-primary">Read More</a>
+						<%= link_to "Read More", youth_development_programs_path(), 'data-no-turbolink' => false, class: 'btn btn-primary' %>
 					</div>
 				</div>
 			</div>
@@ -201,7 +201,7 @@
 	            </div>
             </div>
 		</div>
-		<a href="/resources" class="pull-right btn btn-primary">Read More ...</a>
+		<%= link_to "Read More ...", resources_path(), 'data-no-turbolink' => false, class: 'pull-right btn btn-primary' %>
 	</div>
 </section>
 
