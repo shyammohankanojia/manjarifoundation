@@ -1,15 +1,15 @@
 /******************************** Common CSS ****************************/
 .text-justify {
   text-align: justify;
-} 
+}
 .list {
   list-style: none;
-} 
+}
 /******************************** Search ****************************/
 .cse .gsc-search-button input.gsc-search-button-v2, input.gsc-search-button-v2 {
   height: 25px !important;
   width: 66px !important;
-  margin-top: 5px !important; 
+  margin-top: 5px !important;
 }
 
 .gscb_a {
@@ -20,7 +20,7 @@
   text-align: left !important;
 }
 
-.cse .gsc-control-cse, 
+.cse .gsc-control-cse,
 .gsc-control-cse {
   background-color: #eee !important;
   border: 2px solid #fff !important;
@@ -83,7 +83,7 @@
 
 #home-slider-four::before,
 #home-slider-three::before,
-#home-slider-two::before, 
+#home-slider-two::before,
 #home-slider-one::before {
   content: '';
   position: absolute;
@@ -91,15 +91,19 @@
   top: 0;
   width: 100%;
   height: 400px;
-  background: rgba(0,0,0,0.4);
   z-index: 0;
 }
 
 .banner-title {
   padding-left: 100px;
   color: #fff;
-  width: 500px;
-  text-align: center;
+  width: 450px;
+  text-align: justify;
+  margin-top:50px;
+}
+
+.banner-title p{
+  font-size: 16px;
 }
 
 .carousel-inner a {
