@@ -39,18 +39,19 @@ Rails.application.configure do
   config.assets.debug = true
 
   # ActionMailer Config
-  config.action_mailer.default_url_options = { :host => 'localhost:3000' }
   config.action_mailer.delivery_method = :smtp
+  config.action_mailer.default_url_options = { :host => 'localhost:3000' }
   config.action_mailer.raise_delivery_errors = true
   config.action_mailer.smtp_settings = {
     address: "smtp.gmail.com",
     port: 587,
-    domain: 'gmail.com',
+    domain: 'manjarifoundation.in',
     authentication: "plain",
     enable_starttls_auto: true,
-    user_name: 'amar.funride@gmail.com',
-    password: 'Aspire@5'
+    user_name: 'manjari.website@gmail.com',
+    password: 'manjarimailbox'
   }
+
 
   # Asset digests allow you to set far-future HTTP expiration dates on all assets,
   # yet still be able to expire them through the digest params.
