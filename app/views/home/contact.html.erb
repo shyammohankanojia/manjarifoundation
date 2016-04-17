@@ -1,3 +1,10 @@
+<% flash.each do |key, value| %>
+  <div class="flash-container alert alert-success fade in">
+      <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+      <%= value %>
+  </div>
+<% end %>
+
 <div class="contact-header">
   <div class="container">
       <div class="row">

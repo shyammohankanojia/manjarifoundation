@@ -60,6 +60,7 @@ class HomeController < ApplicationController
         end
         
         NotificationMailer.contactus_inquiry(mail_attributes).deliver
+        flash[:success] = "We have received your message. Thank you for your interest in Manjari! We will respond to you."
         redirect_to contact_path
     end
 end
