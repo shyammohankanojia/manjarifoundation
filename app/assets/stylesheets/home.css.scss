@@ -44,6 +44,10 @@
   width: 100%;
 }
 /******************************** Banner ********************************/
+.locations-map > iframe {
+  width: 100% !important;
+}
+/******************************** Banner ********************************/
 #home-slider-one {
   height: 400px;
   background: image-url("home_page/home-slider-one.jpg") center center no-repeat scroll;
